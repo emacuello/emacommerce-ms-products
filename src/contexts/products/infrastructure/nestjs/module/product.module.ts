@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, OnModuleInit } from '@nestjs/common';
 
 import { CreateProductService } from 'src/contexts/products/application/createProduct/createProduct.service';
 import { DeleteProductService } from 'src/contexts/products/application/deleteProduct/deleteProduct.service';
@@ -15,6 +15,8 @@ import { PostProductsController } from '../controller/V1/PostProducts/postProduc
 import { PutProductsController } from '../controller/V1/PutProducts/putProducts.controller';
 import { Product } from '../../sequelize/product.entitySequelize';
 import { SequelizeModule } from '@nestjs/sequelize';
+import { GetByManyIdsController } from '../controller/V1/getByManyIds/getByManyIds.controller';
+import { GetManyProductsService } from 'src/contexts/products/application/getManyProducts/getManyProducts.service';
 
 @Module({
   imports: [SequelizeModule.forFeature([Product])],
@@ -24,6 +26,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
     GetOneProductsController,
     PostProductsController,
     PutProductsController,
+    GetByManyIdsController,
   ],
   providers: [
     CreateProductService,
@@ -31,6 +34,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
     GetAllProductsService,
     GetOneProductService,
     UpdateProductService,
+    GetManyProductsService,
     MicroserviceRepository,
     {
       provide: ProductsRepository,
@@ -38,4 +42,12 @@ import { SequelizeModule } from '@nestjs/sequelize';
     },
   ],
 })
-export class ProductModule {}
+export class ProductModule implements OnModuleInit {
+  constructor(private readonly msRepository: MicroserviceRepository) {}
+  async onModuleInit() {
+    const products = await this.msRepository.findAll();
+    if (!products.length) {
+      await this.msRepository.seed();
+    }
+  }
+}

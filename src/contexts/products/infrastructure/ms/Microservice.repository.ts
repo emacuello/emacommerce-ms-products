@@ -6,6 +6,8 @@ import { ErrorCreateProductException } from '../../domain/errors/errorCreated';
 import { ErrorDeleteProductException } from '../../domain/errors/errorDeleted';
 import { NotFoundProductException } from '../../domain/errors/notFoundProduct';
 import { ErrorUpdateProductException } from '../../domain/errors/errorUpdated';
+import { Op } from 'sequelize';
+import * as ProductsSeed from '../../../../utils/seed/Products.json';
 
 export class MicroserviceRepository extends ProductsRepository {
   constructor(
@@ -54,6 +56,25 @@ export class MicroserviceRepository extends ProductsRepository {
       return 'Producto actualizado correctamente';
     } catch (error) {
       throw new ErrorUpdateProductException(error);
+    }
+  }
+  async findByIds(id: { id: string }[]): Promise<Product[]> {
+    try {
+      const ids = id.map((product) => product.id);
+      const products = await this.productModel.findAll({
+        where: { id: { [Op.in]: ids } },
+      });
+      return products.map((product) => Product.create(product));
+    } catch (error) {
+      throw new NotFoundProductException(error);
+    }
+  }
+
+  async seed(): Promise<void> {
+    try {
+      await this.productModel.bulkCreate(ProductsSeed);
+    } catch (error) {
+      throw new ErrorCreateProductException(error);
     }
   }
 }

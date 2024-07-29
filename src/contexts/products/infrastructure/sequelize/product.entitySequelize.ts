@@ -6,6 +6,7 @@ import {
   Model,
   PrimaryKey,
   Table,
+  Unique,
   UpdatedAt,
 } from 'sequelize-typescript';
 import { v4 as uuidv4 } from 'uuid';
@@ -16,6 +17,7 @@ export class Product extends Model<Product> {
   @Default(uuidv4)
   @Column
   id: string;
+  @Unique
   @Column
   name: string;
   @Column

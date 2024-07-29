@@ -1,0 +1,258 @@
+[
+    {
+        "name": "Apple Watch Series 8",
+        "description": "The best smartwatch in the world",
+        "price": 399.99,
+        "stock": 10,
+        "imgUrl": "https://images.apple.com/v/watch-hero/hero-1.jpg",
+        "category": "smartwatch"
+    },
+    {
+        "name": "Samsung Galaxy Watch 6",
+        "description": "The best smartwatch in the world",
+        "price": 349.99,
+        "stock": 10,
+        "imgUrl": "https://images.samsung.com/is/image/samsung/p6pim/latin_en/galaxy-watch6/galaxy-watch6-gallery1.jpg",
+        "category": "smartwatch"
+    },
+    {
+        "name": "Sony WH-1000XM5",
+        "description": "Noise-canceling wireless headphones",
+        "price": 349.99,
+        "stock": 8,
+        "imgUrl": "https://www.sony.com/image/wh-1000xm5.jpg",
+        "category": "headphones"
+    },
+    {
+        "name": "Bose QuietComfort 45",
+        "description": "Noise-canceling wireless headphones",
+        "price": 329.99,
+        "stock": 8,
+        "imgUrl": "https://www.bose.com/images/quietcomfort-45.jpg",
+        "category": "headphones"
+    },
+    {
+        "name": "Jabra Elite 85h",
+        "description": "Noise-canceling wireless headphones",
+        "price": 299.99,
+        "stock": 8,
+        "imgUrl": "https://www.jabra.com/images/elite-85h.jpg",
+        "category": "headphones"
+    },
+    {
+        "name": "NVIDIA GeForce RTX 4090",
+        "description": "High-end gaming graphics card",
+        "price": 1599.99,
+        "stock": 5,
+        "imgUrl": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/",
+        "category": "graphics card"
+    },
+    {
+        "name": "AMD Radeon RX 7900 XTX",
+        "description": "High-end gaming graphics card",
+        "price": 1199.99,
+        "stock": 5,
+        "imgUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7900-xtx",
+        "category": "graphics card"
+    },
+    {
+        "name": "Intel Core i9-13900K",
+        "description": "High-performance CPU",
+        "price": 599.99,
+        "stock": 7,
+        "imgUrl": "https://www.intel.com/content/www/us/en/ark/products/series/13900k.html",
+        "category": "CPU"
+    },
+    {
+        "name": "AMD Ryzen 9 7950X",
+        "description": "High-performance CPU",
+        "price": 699.99,
+        "stock": 7,
+        "imgUrl": "https://www.amd.com/en/products/ryzen-9-7950x",
+        "category": "CPU"
+    },
+    {
+        "name": "Corsair Vengeance LPX 16GB",
+        "description": "High-performance RAM",
+        "price": 79.99,
+        "stock": 20,
+        "imgUrl": "https://www.corsair.com/vengeance-lpx-16gb.jpg",
+        "category": "RAM"
+    },
+    {
+        "name": "G.SKILL Ripjaws V 16GB",
+        "description": "High-performance RAM",
+        "price": 89.99,
+        "stock": 20,
+        "imgUrl": "https://www.gskill.com/product/162/183/1533206206_2_1_1.png",
+        "category": "RAM"
+    },
+    {
+        "name": "Samsung 970 EVO Plus 1TB",
+        "description": "High-speed NVMe SSD",
+        "price": 149.99,
+        "stock": 15,
+        "imgUrl": "https://www.samsung.com/ssd-970-evo-plus.jpg",
+        "category": "SSD"
+    },
+    {
+        "name": "Western Digital WD Black SN850 1TB",
+        "description": "High-speed NVMe SSD",
+        "price": 139.99,
+        "stock": 15,
+        "imgUrl": "https://www.wd.com/products/internal-ssd/wd-black-sn850-nvme-ssd",
+        "category": "SSD"
+    },
+    {
+        "name": "Seagate Barracuda 2TB",
+        "description": "High-capacity HDD",
+        "price": 89.99,
+        "stock": 10,
+        "imgUrl": "https://www.seagate.com/products/hdd/barracuda/",
+        "category": "HDD"
+    },
+    {
+        "name": "Toshiba X300 4TB",
+        "description": "High-capacity HDD",
+        "price": 119.99,
+        "stock": 10,
+        "imgUrl": "https://www.toshiba-storage.com/products/x300/",
+        "category": "HDD"
+    },
+    {
+        "name": "Logitech MX Master 3",
+        "description": "High-end wireless mouse",
+        "price": 99.99,
+        "stock": 12,
+        "imgUrl": "https://www.logitech.com/images/products/mx-master-3.jpg",
+        "category": "mouse"
+    },
+    {
+        "name": "Razer DeathAdder V2",
+        "description": "Gaming mouse",
+        "price": 69.99,
+        "stock": 12,
+        "imgUrl": "https://www.razer.com/images/products/deathadder-v2.jpg",
+        "category": "mouse"
+    },
+    {
+        "name": "Corsair Dark Core RGB",
+        "description": "Gaming mouse with customizable RGB",
+        "price": 89.99,
+        "stock": 12,
+        "imgUrl": "https://www.corsair.com/images/products/dark-core-rgb.jpg",
+        "category": "mouse"
+    },
+    {
+        "name": "Dell UltraSharp U2720Q",
+        "description": "27-inch 4K monitor",
+        "price": 649.99,
+        "stock": 6,
+        "imgUrl": "https://www.dell.com/images/products/ultrasharp-u2720q.jpg",
+        "category": "monitor"
+    },
+    {
+        "name": "ASUS ProArt PA32UCX",
+        "description": "32-inch professional monitor",
+        "price": 1299.99,
+        "stock": 4,
+        "imgUrl": "https://www.asus.com/images/products/proart-pa32ucx.jpg",
+        "category": "monitor"
+    },
+    {
+        "name": "BenQ EL2870U",
+        "description": "28-inch 4K monitor",
+        "price": 299.99,
+        "stock": 8,
+        "imgUrl": "https://www.benq.com/images/products/el2870u.jpg",
+        "category": "monitor"
+    },
+    {
+        "name": "HP Envy x360 15",
+        "description": "15-inch convertible laptop",
+        "price": 1099.99,
+        "stock": 5,
+        "imgUrl": "https://www.hp.com/images/envy-x360-15.jpg",
+        "category": "laptop"
+    },
+    {
+        "name": "Dell XPS 13",
+        "description": "13-inch ultrabook",
+        "price": 1299.99,
+        "stock": 5,
+        "imgUrl": "https://www.dell.com/images/products/xps-13.jpg",
+        "category": "laptop"
+    },
+    {
+        "name": "MacBook Air M2",
+        "description": "Lightweight laptop with M2 chip",
+        "price": 1199.99,
+        "stock": 7,
+        "imgUrl": "https://www.apple.com/images/macbook-air-m2.jpg",
+        "category": "laptop"
+    },
+    {
+        "name": "Logitech C920",
+        "description": "1080p HD webcam",
+        "price": 79.99,
+        "stock": 15,
+        "imgUrl": "https://www.logitech.com/images/products/c920.jpg",
+        "category": "webcam"
+    },
+    {
+        "name": "Razer Kiyo",
+        "description": "Webcam with built-in ring light",
+        "price": 99.99,
+        "stock": 12,
+        "imgUrl": "https://www.razer.com/images/products/kiyo.jpg",
+        "category": "webcam"
+    },
+    {
+        "name": "Microsoft Surface Pro 9",
+        "description": "2-in-1 tablet with detachable keyboard",
+        "price": 999.99,
+        "stock": 6,
+        "imgUrl": "https://www.microsoft.com/images/surface-pro-9.jpg",
+        "category": "tablet"
+    },
+    {
+        "name": "Apple iPad Pro 12.9",
+        "description": "High-performance tablet",
+        "price": 999.99,
+        "stock": 6,
+        "imgUrl": "https://www.apple.com/images/ipad-pro-12-9.jpg",
+        "category": "tablet"
+    },
+    {
+        "name": "Apple iPad Air 4",
+        "description": "Lightweight tablet",
+        "price": 999.99,
+        "stock": 6,
+        "imgUrl": "https://www.apple.com/images/ipad-air-4.jpg",
+        "category": "tablet"
+    },
+    {
+        "name": "Apple iPad Mini 6",
+        "description": "Lightweight tablet",
+        "price": 999.99,
+        "stock": 6,
+        "imgUrl": "https://www.apple.com/images/ipad-mini-6.jpg",
+        "category": "tablet"
+    },
+    {
+        "name": "Apple iPad Pro 12.7",
+        "description": "High-performance tablet",
+        "price": 999.99,
+        "stock": 6,
+        "imgUrl": "https://www.apple.com/images/ipad-pro-12-9.jpg",
+        "category": "tablet"
+    },
+    {
+        "name": "Apple iPad Air 5",
+        "description": "Lightweight tablet",
+        "price": 999.99,
+        "stock": 6,
+        "imgUrl": "https://www.apple.com/images/ipad-air-4.jpg",
+        "category": "tablet"
+    }
+]
