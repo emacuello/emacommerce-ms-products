@@ -1,0 +1,6 @@
+services:
+  products-ms:
+    build: .    
+    env_file:
+      - .env
+
